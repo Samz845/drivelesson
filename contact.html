@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>contact</title>
+</head>
+<body>
+<header>
+    <a href="drive.html"><p class="name-tag">LearnToDriveCanada</p></a>
+    <a href="#">Contact Us</a>
+</header>
+
+<div class="request">
+    <div class="request-link">
+        <a href="">LearnToDriveCanada</a>
+        <span> > Submit a request</span>
+    </div>
+
+    <div class="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="search" placeholder="Search">
+    </div>
+</div>
+
+<main>
+    <h1>Submit a request</h1>
+
+    <form action="">
+        <div class="input-group">
+            <label for="about">Which best describes you?</label>
+
+            <div class="dropdown">
+                <div class="dropdown-flex">
+                   <span class="dropdown-text"></span>
+                   <span class="material-symbols-outlined" id="dropdown-arrow">arrow_drop_down</span>
+                </div>
+
+                 <div class="dropdown-content">
+                    <div data-value="learning" class="option">I am learning to drive</div>
+                    <div data-value="instructor" class="option">I am a Driving Instructor</div>
+                    <div data-value="join" class="option">I am a Driving Instructor interested in joining LearnToDriveCanada</div>
+                    <div data-value="meia" class="option">I have a Media/PR enquiry</div>
+                 </div>
+             </div>
+        </div>
+      
+        <div class="input-family">
+        <div class="input-group">
+            <label for="email">Your email address</label>
+            <input type="email" id="email" name="email">
+            <span class="error-msg"></span>
+        </div>
+
+        <div class="input-group">
+            <label for="first-name">First name</label>
+            <input type="text" id="first-name" name="first-name">
+            <span class="error-msg"></span>
+        </div>
+
+        <div class="input-group">
+            <label for="surname">Surname</label>
+            <input type="text" id="surname" name="surname">
+            <span class="error-msg"></span>
+        </div>
+
+        <div class="input-group">
+            <label for="phone">Mobile phone number</label>
+            <input type="number" id="phone">
+            <span class="error-msg"></span>
+        </div>
+
+        <div class="input-group" id="transmission">
+            <label for="transmission">Please select the transmission(optional)</label>
+            
+            <div class="dropdown">
+                <div class="dropdown-flex">
+                   <span class="dropdown-text"></span>
+                   <span class="material-symbols-outlined" id="dropdown-arrow">arrow_drop_down</span>
+                </div>
+
+                 <div class="dropdown-content">
+                    <div data-value="manual" class="option">Manual</div>
+                    <div data-value="automatic" class="option">Automatic</div>
+                    <div data-value="both" class="option">Both</div>
+                 </div>
+             </div>
+        </div>
+
+        <div class="input-group" id="enquiry">
+            <label for="enquiry">Please select your type of enquiry</label>
+            
+            <div class="dropdown">
+                <div class="dropdown-flex">
+                   <span class="dropdown-text"></span>
+                   <span class="material-symbols-outlined" id="dropdown-arrow">arrow_drop_down</span>
+                </div>
+
+                 <div class="dropdown-content">
+                    <div data-value="info" class="option">Enquiry and information</div>
+                    <div data-value="account" class="option">My account</div>
+                    <div data-value="bookings" class="option">My bookings</div>
+                    <div data-value="payments" class="option">My payments</div>
+                    <div data-value="dispute" class="option">Lodge a dispute</div>
+                    <div data-value="feedback" class="option">Provide feedback</div>
+                 </div>
+             </div>
+             <span class="error-msg"></span>
+        </div>
+
+        <div class="input-group" id="postal-div">
+            <label for="postcode">Postcode</label>
+            <input type="text" id="postcode" name="postcode">
+            <span class="error-msg"></span>
+        </div>
+
+        <div class="input-group" id="account">
+            <label for="enquiry">Which best describes your situation?</label>
+            
+            <div class="dropdown">
+                <div class="dropdown-flex">
+                   <span class="dropdown-text"></span>
+                   <span class="material-symbols-outlined" id="dropdown-arrow">arrow_drop_down</span>
+                </div>
+
+                 <div class="dropdown-content">
+                    <div data-value="info" class="option">  I can't log in</div>
+                    <div data-value="change" class="option">Change my settings</div>
+                 </div>
+             </div>
+             <span class="error-msg"></span>
+        </div>
+
+        <div class="input-group" id="my-bookings">
+            <label for="enquiry">Which best describes your situation?</label>
+            
+            <div class="dropdown">
+                <div class="dropdown-flex">
+                   <span class="dropdown-text"></span>
+                   <span class="material-symbols-outlined" id="dropdown-arrow">arrow_drop_down</span>
+                </div>
+
+                 <div class="dropdown-content">
+                    <div data-value="schedule" class="option">I want to reschedule a booking</div>
+                    <div data-value="edit" class="option">I need to edit/ change a booking</div>
+                    <div data-value="cancel" class="option">i have a booking cancellation</div>
+                    <div data-value="availability" class="option">I have an availability query</div>
+                    <div data-value="general" class="option">I have a general booking query</div>
+                    <div data-value="error" class="option">i am having trouble with a booking</div>
+                 </div>
+             </div>
+             <span class="error-msg"></span>
+        </div>
+
+        <div class="input-group" id="payments">
+            <label for="enquiry">Which best describes your situation?</label>
+            
+            <div class="dropdown">
+                <div class="dropdown-flex">
+                   <span class="dropdown-text"></span>
+                   <span class="material-symbols-outlined" id="dropdown-arrow">arrow_drop_down</span>
+                </div>
+
+                 <div class="dropdown-content">
+                    <div data-value="payment-issue" class="option">I have a payment issue</div>
+                    <div data-value="general-query" class="option">I have a general payment query</div>
+                 </div>
+             </div>
+             <span class="error-msg"></span>
+        </div>
+
+        <div class="input-group" id="feedback">
+            <label for="enquiry">Please select your type of enquiry</label>
+            
+            <div class="dropdown">
+                <div class="dropdown-flex">
+                   <span class="dropdown-text"></span>
+                   <span class="material-symbols-outlined" id="dropdown-arrow">arrow_drop_down</span>
+                </div>
+
+                 <div class="dropdown-content">
+                    <div data-value="assist" class="option">I need assistance with a review</div>
+                    <div data-value="complaint" class="option">I have a complaint</div>
+                    <div data-value="support" class="option">i need technical support</div>
+                 </div>
+             </div>
+             <span class="error-msg"></span>
+        </div>
+
+
+        <div class="input-group">
+            <label for="topic">Subject or topic (optional)</label>
+            <input type="text" id="topic" name="topic">
+            <span class="error-msg"></span>
+        </div>
+
+        <div class="input-group">
+            <label for="info">Tell us more, providing as much detail as you can will allow us to help you as quickly as possible. *</label>
+            <textarea name="info" id="info" rows="4" cols="50"></textarea>
+            <span class="error-msg"></span>
+            <p>
+                Some information you include in your message may be considered sensitive by some privacy laws. By submitting your request, you give us consent to process any sensitive information included in your enquiry. For more information, please refer to our Privacy Policy.
+            </p>
+        </div>
+
+        <div class="input-group">
+            <label for="file">Attachments(optional)</label>
+            <input type="file" id="file" name="file" placeholder="Add files or drop files here">
+            <span class="error-msg"></span>
+        </div>
+
+        <button type="submit">Submit</button>
+    </div>
+    </form>
+</main>
+
+<footer>
+    <a href="drive.html">LearnToDriveCanada</a>
+</footer>
+<script src="contact.js"></script>
+</body>
+</html>
