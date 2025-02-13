@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+main{
+    width: 100%;
+    display: flex;
+}
+
+.wrapper{
+    width: 60%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-tag{
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: wavy;
+    background:linear-gradient(90deg, #00b4d8, #0077b6) ;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+.name-span{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-decoration: underline;
+    color: rgb(168, 146, 146);
+}
+
+.form-container{
+    width: 40%;
+    padding: 30px;
+}
+
+.header{
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+h2{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.instructor-link{
+    font-size: 1.2rem;
+    color: rgb(97, 81, 81);
+    font-weight: 500;
+}
+
+.register{
+    text-decoration: none;
+    color: orangered;
+}
+
+.red{
+    color: red;
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.container{
+    width: 100%;
+    margin: 30px auto;
+}
+
+.flex{
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    padding: 5px;
+}
+
+.flex input{
+    width: 95%;
+    outline: 0;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.flex span{
+    display: block;
+    margin: 10px auto;
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container p{
+    margin-top: 5px;
+    color: red;
+}
+
+button{
+    width: 100%;
+    padding: 20px;
+    background-color: orangered;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-top: 16px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+
+ .flex.error{
+    border-color: red;
+}
+
+.flex.success{
+    border-color: green;
+}
+
+button:hover{
+    transform: translateY(3px);
+}
+
+.forget{
+    width: 150px;
+    text-decoration: none;
+    color: #000;
+    display: block;
+    margin: 40px auto;
+}
+
+#check{
+    appearance: none;
+    width: 20px ;
+    height: 20px;
+    padding: 10px;
+    border: 2px solid orangered;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+    background-color: rgb(247, 152, 117);
+}
+
+#check:checked::after{
+    content: "✔";
+    color: rgb(149, 8, 8);
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    top: -2px;
+    left: 2px;
+}
+
+.flex-checkbox{
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper{
+        display: none;
+    }
+
+    .form-container{
+        width: 100%;
+    }
+
+    .flex input{
+        width: 100%;
+    }
+
+    .instructor-link{
+        font-size: 1rem;
+    }
+    
+}

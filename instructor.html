@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="instructor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <main>
+            <div class="wrapper">
+                <div class="name">
+                    <p class="name-tag">LearnToDriveCanada</p>
+                    <p class="name-span">learn safe. learn easy.</p>
+                </div>
+            </div>
+
+            <div class="form-container">
+                <div class="header">
+                    <h2>Instructor Login</h2>
+                    <p class="instructor-link">Want to instruct with LearnToDriveCanada? <a href="register.html" class="register">Register your interest</a></p>
+                </div>
+
+                <form action="" method="post">
+
+                    <div class="container">
+                        <label for="email"><span class="red">*</span> Email address</label>
+                        <div class="flex" id="email-div">
+                             <span class="email"><i class="fa-regular fa-envelope"></i></span>
+                            <input type="email" id="email" name="email" placeholder="Email">
+                        </div>
+                        <p id="email-error"></p>
+                    </div>
+
+                    <div class="container">
+                        <label for="email"><span class="red">*</span>Password</label>
+                        <div class="flex" id="password-div">
+                             <span><i class="fa-solid fa-lock"></i></span>
+                            <input type="password" id="password" name="password" placeholder="Password">
+                        </div>
+                        <p id="password-error"></p>
+                    </div>
+
+                    <div class="container">
+                        <label for="check" class="flex-checkbox">
+                            <input type="checkbox" id="check">
+                            <span class="checkbox-span">Remember me</span>
+                        </label>
+                    </div>
+                      
+                    <div class="btn-container">
+                        <button type="submit">Login</button>
+                    </div>
+
+                    <a href="" class="forget">Forgot password?</a>
+                </form>
+            </div>
+        </main>
+    <script src="instructor.js"></script>
+</body>
+</html>
