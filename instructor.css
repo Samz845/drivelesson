@@ -155,7 +155,7 @@ button:hover{
     display: inline-block;
     cursor: pointer;
     position: relative;
-    border-radius: 5px;
+    border-radius: 4px;
     background-color: rgb(247, 152, 117);
 }
 
