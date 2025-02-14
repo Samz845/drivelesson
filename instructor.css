@@ -162,7 +162,7 @@ button:hover{
 #check:checked::after{
     content: "✔";
     color: rgb(149, 8, 8);
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 700;
     position: absolute;
     top: -2px;
